@@ -12,14 +12,7 @@ class BoxLayoutDemo(App):
         self.root.ids.output_label.text = "Hello " + self.root.ids.input_name.text
 
     def press_clear(self):
-        self.root.ids.input_name.text = ''
-        # for instance in self.root.ids.entriesBox.children:
-        #     instance.state = 'normal'
-        # self.status_text = ""
-
-
-        # def handle_clear(self, input_name):
-        #     self.root.ids.input_name = ""
+        self.root.ids.input_name.text = ""
 
 
 BoxLayoutDemo().run()
