@@ -1,0 +1,27 @@
+
+
+BoxLayout:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+    Button:
+        text: 'Clear'
+        on_press: app.handle_clear()
+
+    TextInput:
+        id: input_name
+        text: ''
+        multiline: False
+        write_tab: False
+        hint_text: 'Your name'
+
+    Button:
+        text: 'Greet'
+        on_press: app.handle_greet()
+
+    Label:
+        id: output_label
+        text: 'Enter your name'
+        color: 1, 1, 0, 1
+        size_hint_y: 0.5
